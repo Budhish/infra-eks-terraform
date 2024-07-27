@@ -14,7 +14,7 @@ Make sure that you are having a workstation with below packages
 → make sure you are configuring aws cli before you start
 
 ```sh 
-→ git clone https://github.com/shan5a6/eks-infra-terraform.git
+→ git clone https://github.com/Budhish/infra-eks-terraform.git
 → cd eks-infra-terraform
 → terraform init
 → terraform apply -auto-approve

@@ -1,6 +1,6 @@
 # NAT EIPs
 resource "aws_eip" "nat_eip" {
-  vpc   = true
+  domain   = "vpc"
   count = length(aws_subnet.public_subnets)
 
   tags = {
@@ -18,4 +18,4 @@ resource "aws_nat_gateway" "nat_gw" {
 
     Name = "${local.name}-nat_gw-${substr(element(var.availability_zones, count.index), -2, 2)}"
   }
-}
+} 
