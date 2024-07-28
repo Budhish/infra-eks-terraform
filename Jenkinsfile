@@ -1,5 +1,8 @@
 pipeline {
     agent any
+        options {
+        timestamps() // Add this line to enable timestamps
+    }
 
     parameters {
         booleanParam(name: 'autoApprove', defaultValue: false, description: 'Automatically run apply after generating plan?')
