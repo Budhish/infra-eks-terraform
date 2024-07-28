@@ -26,7 +26,7 @@ pipeline {
                 """
             }
         }
-stage('Plan') {
+        stage('Plan') {
             steps {
                 sh 'terraform plan -out tfplan'
                 sh 'terraform show -no-color tfplan > tfplan.txt'
@@ -51,7 +51,11 @@ stage('Plan') {
                 }
             }
         }
-
+        stage('update config') {
+            steps {
+                sh 'aws eks update-kubeconfig --name rulestudio-eks --region us-east-1'
+            }
+        }
     }
 }
 
