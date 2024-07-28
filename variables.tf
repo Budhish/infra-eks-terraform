@@ -2,7 +2,7 @@ variable "region" {
     default = "us-east-1"
 }
 variable "customer" {
-    default = "dvs"
+    default = "rule_studio"
 }
 variable "env" {
     default = "dev"
@@ -26,11 +26,11 @@ variable "availability_zones" {
 }
 
 variable "keypair" {
-    default = "dvs-key"
+    default = "rs-key"
 }
 
 variable "cluster_name" {
-    default = "dvs-eks"
+    default = "rulestudio-eks"
 }
 
 variable "public_nodes_capacity" {

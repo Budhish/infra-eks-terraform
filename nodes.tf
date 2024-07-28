@@ -1,6 +1,6 @@
 resource "aws_key_pair" "mykey" {
   key_name   = "${var.keypair}"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxoqfP6la1XfdLlVtIwhN36i8FzMTh16d7EJZ/ivfDcAzjuWJoXYR7gTSrTGQ5oJuQ/eIm4LmRY+droxzNf7/BnO/6UtEWigNPQFKVNGvefkucpUz2gL0q56rL20eIKVnXmKm5e5qg2U8DIqx/bULxGaFJoDSP288Dd/6KUGkXXgQLlUHRChJbMJVE+r6lqK/mOD4CC8gvRPXwmvRRjLRcChxhLQXsCKOR4CTV4Eh+iM+PDo/wFnzjFcRqBvyXf/0i0+bAyCOpISxTQRecE2ieCsbA09vNOkukwrF1mJZ7L149K4cT8CMoCsy0QCgBLLSDgvptV6Wr0hBPS9T3eeil imported-openssh-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAjffu60w+A8NXIg/zQUAG9ZVdOrEnIZ6zOeP86GZhnjTbWHMC8kvqO8LLrY6Xh3c9QizSUVM7t/eaZj5ri+xmIhU2xIVKV9jzz+/3AuR9cHVPze09OHw6lMNT6KbTWhzHEFtkMNH5HUVRRKEquT/RNSQ3KNTai35u4giZfSmAV+Ben"
 }
 
 resource "aws_iam_role" "nodes" {
