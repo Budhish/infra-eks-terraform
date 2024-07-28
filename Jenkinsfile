@@ -51,11 +51,6 @@ pipeline {
                 }
             }
         }
-        stage('update config') {
-            steps {
-                sh 'aws eks update-kubeconfig --name rulestudio-eks --region us-east-1'
-            }
-        }
     }
 }
 
