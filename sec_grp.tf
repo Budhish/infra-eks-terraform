@@ -17,6 +17,12 @@ resource "aws_security_group" "sec_group" {
   }
 
   ingress {
+    from_port = 8080
+    to_port   = 8080
+    protocol  = "tcp"
+    cidr_blocks = ["${var.vpc_cidr}"]
+  }
+  ingress {
     from_port = 80
     to_port   = 80
     protocol  = "tcp"
