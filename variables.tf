@@ -1,5 +1,5 @@
 variable "region" {
-    default = "us-east-1"
+    default = "us-east-2"
 }
 variable "customer" {
     default = "rulestudio"
@@ -22,7 +22,7 @@ variable "private_subnets" {
 
 variable "availability_zones" {
     type    = list
-    default = ["us-east-1a","us-east-1b"]    
+    default = ["us-east-2a","us-east-2b"]    
 }
 
 variable "keypair" {
