@@ -62,7 +62,7 @@ variable "private_nodes_capacity" {
 }
 
 variable "private_nodes_type" {
-    default = "t3.small"
+    default = "t2.micro"
 }
 variable "private_nodes_min" {
     default = 1
