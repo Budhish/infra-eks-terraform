@@ -44,7 +44,7 @@ variable "public_nodes_min" {
 }
 
 variable "public_nodes_max" {
-    default = 2
+    default = 4
 }
 
 variable "public_nodes_des" {
@@ -69,7 +69,7 @@ variable "private_nodes_min" {
 }
 
 variable "private_nodes_max" {
-    default = 2
+    default = 4
 }
 
 variable "private_nodes_des" {
