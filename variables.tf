@@ -1,8 +1,8 @@
 variable "region" {
-    default = "us-east-2"
+    default = "ap-south-1"
 }
 variable "customer" {
-    default = "rulestudio"
+    default = "ruler"
 }
 variable "env" {
     default = "dev"
@@ -22,15 +22,15 @@ variable "private_subnets" {
 
 variable "availability_zones" {
     type    = list
-    default = ["us-east-2a","us-east-2b"]    
+    default = ["ap-south-1a","ap-south-1b"]    
 }
 
 variable "keypair" {
-    default = "rs-key"
+    default = "ruler-key"
 }
 
 variable "cluster_name" {
-    default = "rulestudio-eks"
+    default = "ruler-eks"
 }
 
 variable "public_nodes_capacity" {
@@ -44,7 +44,7 @@ variable "public_nodes_min" {
 }
 
 variable "public_nodes_max" {
-    default = 4
+    default = 2
 }
 
 variable "public_nodes_des" {
@@ -62,14 +62,14 @@ variable "private_nodes_capacity" {
 }
 
 variable "private_nodes_type" {
-    default = "t2.micro"
+    default = "t3.small"
 }
 variable "private_nodes_min" {
     default = 1
 }
 
 variable "private_nodes_max" {
-    default = 4
+    default = 2
 }
 
 variable "private_nodes_des" {

@@ -21,7 +21,7 @@ Make sure that you are having a workstation with below packages
 ```
 Note: It take around 5-10 minutes to build the eks cluster
 ```sh
-→ aws eks update-kubeconfig --name clustername --region us-east-1 # update the kubeconfig 
+→ aws eks update-kubeconfig --name clustername --region ap-south-1 # update the kubeconfig 
 ```
 ##### EKS Architecture
 ![EKS Architecture](EKS.jpg)
