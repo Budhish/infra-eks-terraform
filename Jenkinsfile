@@ -16,6 +16,12 @@ pipeline {
     }
 
     stages {
+        stage('Cleanup Workspace') { // Add this stage
+            steps {
+                deleteDir() // Deletes the workspace
+            }
+        }
+        
         stage('Checkout') {
             steps {
                 git branch: 'master', url: 'https://github.com/Budhish/infra-eks-terraform.git'
