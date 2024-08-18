@@ -1,36 +1,36 @@
 variable "region" {
-    default = "ap-south-1"
+    default = "us-east-1"
 }
 variable "customer" {
-    default = "ruler"
+    default = "rule-studio"
 }
 variable "env" {
     default = "dev"
 }
 variable "vpc_cidr" {
-    default = "10.10.0.0/16"
+    default = "11.10.0.0/16"
 }
 variable "public_subnets" {
     type    = list
-    default = ["10.10.10.0/24","10.10.15.0/24"]
+    default = ["11.10.10.0/24","11.10.15.0/24"]
 }
 
 variable "private_subnets" {
     type    = list
-    default = ["10.10.20.0/24","10.10.25.0/24"]    
+    default = ["11.10.20.0/24","11.10.25.0/24"]    
 }
 
 variable "availability_zones" {
     type    = list
-    default = ["ap-south-1a","ap-south-1b"]    
+    default = ["us-east-1a","us-east-1b"]    
 }
 
 variable "keypair" {
-    default = "ruler-key"
+    default = "rulestudio-key"
 }
 
 variable "cluster_name" {
-    default = "ruler-eks"
+    default = "rulestudio-eks"
 }
 
 variable "public_nodes_capacity" {
