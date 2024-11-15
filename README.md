@@ -10,7 +10,7 @@ Make sure that you are having a workstation with below packages
 - kubectl
 
 
-## Building Microserivce Platform - EKS:
+### Building Microserivce Platform - EKS:
 → make sure you are configuring aws cli before you start
 
 ```sh 
